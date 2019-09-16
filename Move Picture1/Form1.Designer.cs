@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PB = new System.Windows.Forms.PictureBox();
             this.btn_left = new System.Windows.Forms.Button();
             this.btn_down = new System.Windows.Forms.Button();
             this.btn_right = new System.Windows.Forms.Button();
@@ -37,17 +36,9 @@
             this.btn_upleft = new System.Windows.Forms.Button();
             this.btn_downleft = new System.Windows.Forms.Button();
             this.btn_downright = new System.Windows.Forms.Button();
+            this.PB = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PB
-            // 
-            this.PB.Image = global::Move_Picture1.Properties.Resources.download;
-            this.PB.Location = new System.Drawing.Point(522, 230);
-            this.PB.Name = "PB";
-            this.PB.Size = new System.Drawing.Size(257, 198);
-            this.PB.TabIndex = 0;
-            this.PB.TabStop = false;
             // 
             // btn_left
             // 
@@ -128,6 +119,17 @@
             this.btn_downright.Text = "DOWN RIGHT";
             this.btn_downright.UseVisualStyleBackColor = true;
             this.btn_downright.Click += new System.EventHandler(this.Btn_downright_Click);
+            // 
+            // PB
+            // 
+            this.PB.Image = global::Move_Picture1.Properties.Resources.Pickle_Rick;
+            this.PB.Location = new System.Drawing.Point(574, 224);
+            this.PB.Name = "PB";
+            this.PB.Size = new System.Drawing.Size(294, 191);
+            this.PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB.TabIndex = 0;
+            this.PB.TabStop = false;
+            this.PB.Click += new System.EventHandler(this.PB_Click);
             // 
             // Form1
             // 

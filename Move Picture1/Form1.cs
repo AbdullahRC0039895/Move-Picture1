@@ -70,5 +70,10 @@ namespace Move_Picture1
         {
             PB.Location = new Point(PB.Location.X + 10, PB.Location.Y + 10);
         }
+
+        private void PB_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
