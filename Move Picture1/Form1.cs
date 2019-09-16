@@ -18,14 +18,19 @@ namespace Move_Picture1
         }
 
         private void Btn_down_Click(object sender, EventArgs e)
+        
         {
             PB.Location = new Point(PB.Location.X, PB.Location.Y +10);
         }
 
         private void Btn_left_Click(object sender, EventArgs e)
-        {
-            PB.Location = new Point(PB.Location.X -10, PB.Location.Y);
-        }
+    {
+            if (PB.Location.X > 0)
+            {
+                PB.Location = new Point(PB.Location.X - 10, PB.Location.Y);
+            }
+    }
+        
 
         private void Btn_up_Click(object sender, EventArgs e)
         {
@@ -33,9 +38,13 @@ namespace Move_Picture1
         }
 
         private void Btn_right_Click(object sender, EventArgs e)
-        {
-            PB.Location = new Point(PB.Location.X +10, PB.Location.Y);
-        }
+    {
+            if (PB.Location.X + 10 < ClientRectangle.Width)
+            { 
+                 PB.Location = new Point(PB.Location.X +10, PB.Location.Y);
+            }      
+    }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
