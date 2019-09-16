@@ -33,6 +33,10 @@
             this.btn_down = new System.Windows.Forms.Button();
             this.btn_right = new System.Windows.Forms.Button();
             this.btn_up = new System.Windows.Forms.Button();
+            this.btn_upright = new System.Windows.Forms.Button();
+            this.btn_upleft = new System.Windows.Forms.Button();
+            this.btn_downleft = new System.Windows.Forms.Button();
+            this.btn_downright = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,11 +89,55 @@
             this.btn_up.UseVisualStyleBackColor = true;
             this.btn_up.Click += new System.EventHandler(this.Btn_up_Click);
             // 
+            // btn_upright
+            // 
+            this.btn_upright.Location = new System.Drawing.Point(1117, 22);
+            this.btn_upright.Name = "btn_upright";
+            this.btn_upright.Size = new System.Drawing.Size(75, 72);
+            this.btn_upright.TabIndex = 5;
+            this.btn_upright.Text = "UP RIGHT";
+            this.btn_upright.UseVisualStyleBackColor = true;
+            this.btn_upright.Click += new System.EventHandler(this.Btn_upright_Click);
+            // 
+            // btn_upleft
+            // 
+            this.btn_upleft.Location = new System.Drawing.Point(955, 22);
+            this.btn_upleft.Name = "btn_upleft";
+            this.btn_upleft.Size = new System.Drawing.Size(75, 72);
+            this.btn_upleft.TabIndex = 6;
+            this.btn_upleft.Text = "UP LEFT";
+            this.btn_upleft.UseVisualStyleBackColor = true;
+            this.btn_upleft.Click += new System.EventHandler(this.Btn_upleft_Click);
+            // 
+            // btn_downleft
+            // 
+            this.btn_downleft.Location = new System.Drawing.Point(955, 178);
+            this.btn_downleft.Name = "btn_downleft";
+            this.btn_downleft.Size = new System.Drawing.Size(75, 72);
+            this.btn_downleft.TabIndex = 7;
+            this.btn_downleft.Text = "DOWN LEFT";
+            this.btn_downleft.UseVisualStyleBackColor = true;
+            this.btn_downleft.Click += new System.EventHandler(this.Btn_downleft_Click);
+            // 
+            // btn_downright
+            // 
+            this.btn_downright.Location = new System.Drawing.Point(1117, 178);
+            this.btn_downright.Name = "btn_downright";
+            this.btn_downright.Size = new System.Drawing.Size(75, 72);
+            this.btn_downright.TabIndex = 8;
+            this.btn_downright.Text = "DOWN RIGHT";
+            this.btn_downright.UseVisualStyleBackColor = true;
+            this.btn_downright.Click += new System.EventHandler(this.Btn_downright_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1239, 807);
+            this.Controls.Add(this.btn_downright);
+            this.Controls.Add(this.btn_downleft);
+            this.Controls.Add(this.btn_upleft);
+            this.Controls.Add(this.btn_upright);
             this.Controls.Add(this.btn_up);
             this.Controls.Add(this.btn_right);
             this.Controls.Add(this.btn_down);
@@ -97,6 +145,7 @@
             this.Controls.Add(this.PB);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PB)).EndInit();
             this.ResumeLayout(false);
 
@@ -109,6 +158,10 @@
         private System.Windows.Forms.Button btn_down;
         private System.Windows.Forms.Button btn_right;
         private System.Windows.Forms.Button btn_up;
+        private System.Windows.Forms.Button btn_upright;
+        private System.Windows.Forms.Button btn_upleft;
+        private System.Windows.Forms.Button btn_downleft;
+        private System.Windows.Forms.Button btn_downright;
     }
 }
 

@@ -36,5 +36,30 @@ namespace Move_Picture1
         {
             PB.Location = new Point(PB.Location.X +10, PB.Location.Y);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_upleft_Click(object sender, EventArgs e)
+        {
+            PB.Location = new Point(PB.Location.X - 10, PB.Location.Y - 10);
+        }
+
+        private void Btn_upright_Click(object sender, EventArgs e)
+        {
+            PB.Location = new Point(PB.Location.X + 10, PB.Location.Y - 10);
+        }
+
+        private void Btn_downleft_Click(object sender, EventArgs e)
+        {
+            PB.Location = new Point(PB.Location.X - 10, PB.Location.Y + 10);
+        }
+
+        private void Btn_downright_Click(object sender, EventArgs e)
+        {
+            PB.Location = new Point(PB.Location.X + 10, PB.Location.Y + 10);
+        }
     }
 }
